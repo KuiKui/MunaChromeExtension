@@ -1,0 +1,23 @@
+{
+  "name": "Muna",
+  "version": "0.1.0",
+  "description": "Chrome extension for Muna.io, your gentle reading reminders",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_icon": "img/icon48.png",
+    "default_title": "Read it later with Muna.io"
+  },
+  "background":{
+    "scripts":["src/js/muna.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "cookies",
+    "tabs",
+    "<all_urls>"
+  ],
+  "icons": {
+    "16": "img/icon16.png",
+    "48": "img/icon48.png"
+  }
+}
